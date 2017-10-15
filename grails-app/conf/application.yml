@@ -28,6 +28,9 @@ endpoints:
     enabled: false
     jmx:
         enabled: true
+server:
+  port: 8080
+  context-path: /wsproject
 
 ---
 grails:
