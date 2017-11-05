@@ -3,14 +3,15 @@ package ws.project
 class UrlMappings {
 
     static mappings = {
-        "/$controller/$action?/$id?(.$format)?"{
-            constraints {
-                // apply constraints here
-            }
-        }
-
-        "/"(view:"/index")
+        "/" (controller: 'Api', action: 'index')
         "500"(view:'/error')
-        "404"(view:'/notFound')
+
+        "/books" (controller: 'Api', action: 'book')
+        "/books/$id" (controller: 'Api', action: 'book')
+        "/libraries" (controller: 'Api', action: 'library')
+        "/libraries/$id" (controller: 'Api', action: 'library')
+        "/libraries/$id/books" (controller: "Api", action: "libraryBook")
+        "/libraries/$id/books/$bookId" (controller: "Api", action: "libraryBook")
+
     }
 }
