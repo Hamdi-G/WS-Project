@@ -1,5 +1,7 @@
 package ws.project
 
+import com.mysecurerest.*
+
 class BootStrap {
 
     def init = { servletContext ->
@@ -11,6 +13,10 @@ class BootStrap {
         def library_2 = new Library(name: "lib2", address: "sophia", yearCreated: 2017)
                 .addToBooks(new Book(name: "book2",releaseDate: 2004, isbn: "124234G", author: "Gazzah" ))
                 .save(flush:true)
+
+        def role1 = new Authority(authority:"ROLE_ADMIN").save flush:true
+        def user1 = new User(username:"admin",password:"password").save flush:true
+        UserAuthority.create(user1,role1)
     }
     def destroy = {
     }

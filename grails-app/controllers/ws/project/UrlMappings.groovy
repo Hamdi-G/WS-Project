@@ -6,12 +6,12 @@ class UrlMappings {
         "/" (controller: 'Api', action: 'index')
         "500"(view:'/error')
 
-        "/books" (controller: 'Api', action: 'book')
-        "/books/$id" (controller: 'Api', action: 'book')
-        "/libraries" (controller: 'Api', action: 'library')
-        "/libraries/$id" (controller: 'Api', action: 'library')
-        "/libraries/$id/books" (controller: "Api", action: "libraryBook")
-        "/libraries/$id/books/$bookId" (controller: "Api", action: "libraryBook")
+        "/api/books" (controller: 'Api', action: 'book')
+        "/api/books/$id" (controller: 'Api', action: 'book')
+        "/api/libraries" (controller: 'Api', action: 'library')
+        "/api/libraries/$id" (controller: 'Api', action: 'library')
+        "/api/libraries/$id/books" (controller: "Api", action: "libraryBook")
+        "/api/libraries/$id/books/$bookId" (controller: "Api", action: "libraryBook")
 
     }
 }
