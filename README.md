@@ -48,4 +48,4 @@ L'API utilise ces codes de status pour résumer le résultat de l’opération :
 
 ## Documentation and Test (collection Postman)
 
-https://documenter.getpostman.com/view/2287531/ws-rest-test-collection/77h8PdV
+https://documenter.getpostman.com/view/2287531/ws-rest-test-collection/77h8PdW
