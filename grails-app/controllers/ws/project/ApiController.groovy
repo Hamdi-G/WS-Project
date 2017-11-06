@@ -186,6 +186,7 @@ class ApiController {
                         }
                     }
                     def bookInstance = new Book(params)
+                    bookInstance.library = Library.findById(params.id)
                     if (bookInstance.save(flush: true)) {
                         render bookInstance as JSON
                         render status: 201
