@@ -1,12 +1,12 @@
 # WS-Project
 ## Introduction
-Cet API permet de couvrir tous les besoins possibles sur un modèle deBibliothèque – Livre
+Cet API permet de couvrir tous les besoins possibles sur un modèle deBibliothèque – Livre
 
 ## Overview
-* La bibliothèque aura pour propriétés :
-	Un nom (String), une adresse (String), une année de construction (Int), une collection de livres (Livre)
+* La bibliothèque aura pour propriétés :
+	Un nom (String), une adresse (String), une année de construction (Int), une collection de livres (Livre)
 
-* Le livre aura pour propriétés :
+* Le livre aura pour propriétés :
 	Un nom (String), une date de parution (Date), un ISBN (String) et un auteur (String)
 
 * Les méthodes HTTP utilisées
@@ -48,4 +48,4 @@ L'API utilise ces codes de status pour résumer le résultat de l’opération :
 
 ## Documentation and Test (collection Postman)
 
-https://documenter.getpostman.com/view/2287531/ws-rest-test-collection/77h84Xi
+https://documenter.getpostman.com/view/2287531/ws-rest-test-collection/77h8PdV
